@@ -1,0 +1,8 @@
+﻿@model WebApplication1.Models.ViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    @Html.DropDownListFor(model => model.sermon.Series_ID, new SelectList(Model.seriesList, "Series_ID", "Series_Title", Model.sermon.Series_ID), "-- Select --")
+</div>

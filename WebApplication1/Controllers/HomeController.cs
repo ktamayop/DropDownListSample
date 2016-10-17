@@ -10,6 +10,7 @@ namespace WebApplication1.Controllers
         {
             var model = new ViewModel
             {
+                SelectedValue = 4, //setting the selected value using any property on the viewmodel.
                 sermon = new SermonModel
                 {
                     Series_ID = 3
